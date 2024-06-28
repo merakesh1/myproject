@@ -13,14 +13,14 @@ const BlogPost = () => {
   }, []);
   const { id } = useParams();
   return (
-    <div>
+    <div className="container mt-5">
       {posts?.map((post) =>
         id == post.id ? (
-          <div className='text-center card' key={post.id}>
-            <h1 className='card-header'>{post.id}</h1>
-            <div className='card-body'>
-              <p className='card-text'>{post.title}</p>
-              <p className='card-text'>{post.body}</p>
+          <div className="card shadow-lg" key={post.id}>
+            <h1 className="card-header bg-primary text-white">{post.id}</h1>
+            <div className="card-body">
+              <h5 className="card-title">{post.title}</h5>
+              <p className="card-text">{post.body}</p>
             </div>
           </div>
         ) : null

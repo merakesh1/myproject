@@ -22,6 +22,11 @@ const Blog = ({ setName }) => {
             border: '1px solid black',
             padding: '20px',
             textAlign: 'justify',
+            backgroundImage: `url(${Arundathi})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            height: '100%',
           }}
         >
           {posts?.map((post) => (
